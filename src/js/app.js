@@ -1,5 +1,7 @@
-document.addEventListener('DOMContentLoaded', function(){
+//este parte del codigo si utilizo para crear el menu desplegable de un mobile
+//donde se agrega y quita una clase al reaccionar ante un click
 
+document.addEventListener('DOMContentLoaded', function(){
     eventListeners();
 })
 

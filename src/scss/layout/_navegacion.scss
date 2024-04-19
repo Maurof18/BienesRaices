@@ -11,10 +11,15 @@
 }
 
 .navegacion{
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity 0.5s linear ;//permite crear transiciones o animaciones con css 
+
     @include tablet{
         display: flex;
         align-items: center;
+        opacity: 1;
+        visibility: visible;
     }
     a{
         color: $blanco;
@@ -43,5 +48,6 @@
 }
 
 .mostrar{
-    display: block;
+   visibility: visible;
+   opacity: 1;
 }
