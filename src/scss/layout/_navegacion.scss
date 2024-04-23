@@ -8,7 +8,7 @@
     .dark-mode-boton{
         width: 3rem;
         margin-top: 3rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         filter: invert(100%);
 
         &:hover{
@@ -39,7 +39,8 @@
 .navegacion{
     visibility: hidden;
     opacity: 0;
-    transition: visibility .3s ease-in-out, opacity 0.5s linear ;//permite crear transiciones o animaciones con css 
+    height: 0;
+    transition: visibility .3s ease-in-out, opacity 0.5s linear, height .5s linear ;//permite crear transiciones o animaciones con css 
 
     @include tablet{
         display: flex;
@@ -76,4 +77,5 @@
 .mostrar{
    visibility: visible;
    opacity: 1;
+   height: auto ;
 }
